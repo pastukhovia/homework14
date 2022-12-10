@@ -18,9 +18,7 @@ def movie_search_year_range(year_from, year_to):
 
 @app.route('/rating/children')
 def search_children_rating():
-    # Вместе с G передается случайное слово, потому что по-другому не работает ¯\_(ツ)_/¯.
-    # В конце концов, рейтинга фывфыва не существует, и он не повлияет на результаты поиска
-    result = search_rating('G', 'фывфыва')
+    result = search_rating('G', 'G')
     return jsonify(result)
 
 
